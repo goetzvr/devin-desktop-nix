@@ -2,11 +2,11 @@
 
 pkgs.stdenv.mkDerivation rec {
   pname = "devin-desktop";
-  version = "3.10.27";
+  version = "3.10.35";
 
   src = pkgs.fetchurl {
-    url = "https://windsurf-stable.codeiumdata.com/linux-x64-deb/stable/bcbe88c734e882c54479decce8c34eabc9f8f8b0/Devin-linux-x64-3.10.27.deb";
-    sha256 = "ec95611aa50fa6070f3dcdd16b57625c61a2e0453eed4390d8d05b02e9c81f17";
+    url = "https://windsurf-stable.codeiumdata.com/linux-x64-deb/stable/dfa4a2d639b8a05ab72387c12f1aafca1b4c3cb9/Devin-linux-x64-3.10.35.deb";
+    sha256 = "e6eda55f2ceef5287fa7400de95ea2d49e84400a5f36d63299b6f1a221c225a9";
   };
 
   nativeBuildInputs = [
