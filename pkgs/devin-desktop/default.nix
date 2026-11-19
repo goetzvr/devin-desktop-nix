@@ -64,7 +64,7 @@ pkgs.stdenv.mkDerivation rec {
       --replace-fail "/usr/share/devin-desktop/devin-desktop" "$out/bin/devin-desktop" \
       --replace-fail "Icon=devin-desktop" "Icon=$out/share/pixmaps/devin-desktop.png"
 
-    substituteInPlace $out/share/applications/devin-desktop-url-handler.desktop \
+    substituteInPlace $out/share/applications/devin-desktop.UrlHandler.desktop \
       --replace-fail "/usr/share/devin-desktop/devin-desktop" "$out/bin/devin-desktop" \
       --replace-fail "Icon=devin-desktop" "Icon=$out/share/pixmaps/devin-desktop.png"
   '';

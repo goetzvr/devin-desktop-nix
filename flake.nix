@@ -82,7 +82,7 @@
               --replace-fail "${self.packages.${system}.devin-desktop-unwrapped}/bin/devin-desktop" "$out/bin/devin-desktop" \
               --replace-fail "${self.packages.${system}.devin-desktop-unwrapped}/share/pixmaps/devin-desktop.png" "$out/share/pixmaps/devin-desktop.png"
 
-            substituteInPlace $out/share/applications/devin-desktop-url-handler.desktop \
+            substituteInPlace $out/share/applications/devin-desktop.UrlHandler.desktop \
               --replace-fail "${self.packages.${system}.devin-desktop-unwrapped}/bin/devin-desktop" "$out/bin/devin-desktop" \
               --replace-fail "${self.packages.${system}.devin-desktop-unwrapped}/share/pixmaps/devin-desktop.png" "$out/share/pixmaps/devin-desktop.png"
           '';
